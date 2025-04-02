@@ -13,13 +13,9 @@ const About = () => {
               <p>The only thing we're serious about is food.</p>
             </div>
             <p className="mid">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident possimus optio adipisci dolores impedit illum iusto
-              perferendis, laudantium quod accusamus consequuntur consectetur,
-              tempore nulla error iure reiciendis dolorem assumenda.
-              Necessitatibus fugit asperiores totam rem esse exercitationem
-              iusto ipsum qui dolore ex, accusantium repellat mollitia
-              repellendus.
+            At KVS, we believe food is more than just a meal—it’s an experience. Our dishes are crafted with fresh ingredients, rich flavors, and a passion for quality. Whether you're here for a quick bite or a full meal, we aim to make every visit special.
+
+With a focus on tradition and creativity, our chefs bring you mouthwatering flavors, while our team ensures a warm and welcoming atmosphere. At KVS, great food and hospitality go hand in hand. We can't wait to serve you!
             </p>
             <Link to={"/"}>
               Explore Menu{" "}

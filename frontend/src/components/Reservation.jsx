@@ -49,7 +49,7 @@ const Reservation = () => {
         <div className="banner">
           <div className="reservation_form_box">
             <h1>MAKE A RESERVATION</h1>
-            <p>For Further Questions, Please Call</p>
+            <p>For Further Questions, Please Call xxxxxxxxxx</p>
             <form>
               <div>
                 <input
@@ -94,12 +94,30 @@ const Reservation = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              <button type="submit" onClick={handleReservation}>
-                RESERVE NOW{" "}
-                <span>
-                  <HiOutlineArrowNarrowRight />
-                </span>
-              </button>
+              <button 
+  className="reserveBtn" 
+  style={{ 
+    padding: "8px 20px", 
+    color: "black", 
+    background: "transparent", 
+    border: "1px solid #333", 
+    borderRadius: "20px", 
+    fontSize: "16px", 
+    cursor: "pointer",
+    transition: "0.3s"
+  }} 
+  onMouseOver={(e) => { 
+    e.target.style.background = "#222"; 
+    e.target.style.color = "#fff"; 
+  }} 
+  onMouseOut={(e) => { 
+    e.target.style.background = "transparent"; 
+    e.target.style.color = "black"; 
+  }} 
+  onClick={() => alert("Cannot make reservation right now. Please try again later.")}
+>
+  RESERVE NOW
+</button>
             </form>
           </div>
         </div>

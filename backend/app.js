@@ -2,8 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { errorMiddleware } from "./middlewares/error.js";
+// import { dbConnection } from "./database/dbConnection.js";
 import reservationRouter from "./routes/reservationRoute.js";
-import { dbConnection } from "./database/dbConnection.js";
 
 const app = express();
 dotenv.config({ path: "./config.env" });
@@ -24,7 +24,7 @@ app.get("/", (req, res, next)=>{return res.status(200).json({
   message: "HELLO WORLD AGAIN"
 })})
 
-dbConnection();
+// dbConnection();
 
 app.use(errorMiddleware);
 

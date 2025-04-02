@@ -11,6 +11,7 @@ import Footer from '../../components/Footer'
 const Home = () => {
   return (
     <>
+    <section className="home" id="home">
       <HeroSection/>
       <About/>
       <Qualities/>
@@ -19,6 +20,7 @@ const Home = () => {
       <Team/>
       <Reservation/>
       <Footer/>
+      </section>
     </>
   )
 }
