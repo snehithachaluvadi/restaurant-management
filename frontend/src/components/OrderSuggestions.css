@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,        /* white - bottom left */
+    #fffde7 25%,       /* pale yellow - soft sunlight */
+    #e7e3c0 60%,       /* pastel yellow - light butter */
+    #f09298 100%       /* pastel red - gentle blush */
+  );
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+.suggestion-container {
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .suggestion-question {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .options-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+/* Style for Option Buttons (Image on top, Text below) */
+.option-button {
+    display: flex;
+    flex-direction: column; /* Stack image on top of text */
+    align-items: center;  /* Center everything */
+    justify-content: center;
+    width: 180px;  /* Increased width */
+    height: 220px; /* Increased height */
+    border: 1px solid #ccc;
+    border-radius: 12px;  /* Optional: more rounded corners */
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Enhanced shadow */
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;  /* Increased margin for more spacing */
+  }
+  
+  .option-button:hover {
+    transform: translateY(-7px);  /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Enhanced shadow on hover */
+  }
+  
+  /* Style for Option Images */
+  .option-button img {
+    width: 100px; /* Increased image size */
+    height: 100px; /* Increased image size */
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+    border-radius: 12px; /* Optional: rounds the image edges */
+    margin-bottom: 15px; /* Space between image and text */
+  }
+  
+  /* Style for Option Text */
+  .option-button span {
+    font-size: 16px;  /* Increased font size */
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .results-container {
+    margin-top: 2rem;
+  }
+  
+  .dish-card {
+    width: 250px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .dish-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .dish-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .dish-details {
+    padding: 1rem;
+  }
+  
+  .dish-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
